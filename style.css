@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 54%, 90%);
+}
+
+.container {
+    width: 50%;
+    margin: 50px 0;
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.container img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.container h1 {
+    font-family: 'Young Serif', serif;
+    margin-bottom: 20px;
+    color: hsl(24, 5%, 18%);
+}
+
+.container p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: hsl(24, 5%, 18%);
+}
+
+.preparation {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.preparation h3 {
+    margin-bottom: 20px;
+    color: hsl(334, 40%, 23%);
+}
+
+ul li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: hsl(24, 5%, 18%);
+}
+
+ol li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: hsl(24, 5%, 18%);
+    list-style: decimal;
+}
+
+h2 {
+    margin: 20px 0;
+    color: hsl(15, 38%, 34%);
+    font-family: 'Young Serif', serif;
+}
+
+li::marker {
+    color: hsl(15, 38%, 34%);
+    font-weight: 700;
+  }
+
+.linha {
+    border: 1px solid hsl(30, 18%, 87%);
+    margin: 20px 0;
+}
+
+table {    
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table tr th {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 10px;
+    color: hsl(30, 10%, 34%);
+    font-weight: 400;
+}
+
+table tr td{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    font-weight: 700;
+    color: hsl(15, 35%, 38%);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0px;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .container img {
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .container h1, p, .preparation {
+        padding: 10px 20px;
+    }
+
+    .preparation {
+        margin: 0 20px;
+    }
+
+    .ingredients {
+        padding: 0 20px;
+    }
+
+    .instructions {
+        padding: 0 20px;
+    }
+
+    .nutrition {
+        padding: 0 20px;
+    }
+}
